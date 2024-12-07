@@ -52,14 +52,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Additional theme colors
-        dark: "#3D405B", // Deep blue-gray
-        light: "#F4F1DE", // Cream
-        bright: "#FF6B6B", // Bright coral for kid-friendly accents
-        success: "#81B29A", // Soft green
-        warning: "#F2CC8F", // Warm yellow
-        error: "#E07A5F", // Terra cotta
-        info: "#3D405B", // Deep blue-gray
+        // Nature-inspired colors
+        forest: "#2F4F4F", // Dark green
+        earth: "#8B4513", // Saddle brown
+        sand: "#F4A460", // Sandy brown
+        sky: "#87CEEB", // Sky blue
+        leaf: "#90EE90", // Light green
+        bark: "#8B7355", // Wood brown
+        moss: "#ADDFAD", // Moss green
+        stone: "#A9A9A9", // Medium gray
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -71,13 +76,17 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
         "float": "float 3s ease-in-out infinite",
-        "bounce-slow": "bounce 3s ease-in-out infinite",
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+      },
+      backgroundImage: {
+        'leaf-pattern': "url('/leaf-texture.png')",
+        'water-flow': "url('/water-texture.png')",
+        'aloe-texture': "url('/aloe-texture.png')",
       },
     },
   },
