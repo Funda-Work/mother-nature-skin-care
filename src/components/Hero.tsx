@@ -1,24 +1,39 @@
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-cream">
-      <div className="absolute inset-0 bg-[url('/photo-1517022812141-23620dba5c23')] bg-cover bg-center opacity-20" />
+    <div className="relative min-h-screen bg-light">
+      <div className="absolute inset-0 bg-[url('/hero-kids.jpg')] bg-cover bg-center opacity-20" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
-        <div className="text-center animate-fade-in">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-forest mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-dark mb-6 animate-float">
             Holistic Healing for Sensitive Skin
           </h1>
-          <p className="text-xl md:text-2xl text-forest/80 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-dark/80 mb-8 max-w-3xl mx-auto">
             Empowering families through nature's wisdom, backed by science and rooted in African tradition.
           </p>
-          <Button 
-            className="bg-terra hover:bg-terra/90 text-white px-8 py-6 text-lg rounded-full"
-            onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Explore Our Products
-          </Button>
-        </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg rounded-full animate-bounce-slow"
+              onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Explore Our Products
+            </Button>
+            <Button 
+              variant="outline"
+              className="border-accent text-accent hover:bg-accent/10 px-8 py-6 text-lg rounded-full"
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              View Services
+            </Button>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
