@@ -42,9 +42,9 @@ const Hero = () => {
             className="relative"
           >
             <img
-              src="/lovable-uploads/d100f6cb-1bf8-4463-b44e-6db766557f88.png"
-              alt="Mother Nature Kids Eczema Ointment"
-              className="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+              src="/lovable-uploads/a1fd53ba-a8e2-4fed-9f84-1311973d3a65.png"
+              alt="Natural ingredients and healing elements"
+              className="w-full rounded-lg shadow-2xl"
             />
           </motion.div>
         </div>
