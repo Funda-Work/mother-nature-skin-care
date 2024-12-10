@@ -11,7 +11,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-left"
+            className="text-center lg:text-center"
           >
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-forest mb-6 animate-float">
               Holistic Healing for Sensitive Skin
@@ -19,7 +19,7 @@ const Hero = () => {
             <p className="font-sans text-xl md:text-2xl text-forest/80 mb-8">
               Empowering families through nature's wisdom, backed by science and rooted in African tradition.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg rounded-full"
                 onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
