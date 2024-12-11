@@ -4,22 +4,23 @@ import { motion } from "framer-motion";
 
 const products = [
   {
-    title: "Eczema Relief Oil",
+    title: "Eczema Relief Oil (100ml)",
     description: "Natural blend with Castor Oil and Sarsaparilla for gentle, effective relief.",
     image: "/photo-1618160702438-9b02ab6515c9",
-    price: "R330.00"
+    price: "R150.00"
   },
   {
-    title: "Natural Shower Gel",
+    title: "Kgalagadi Gentle Shower Gel (100ml)",
     description: "Gentle cleansing with Aloe Ferox and rosemary extract.",
     image: "/photo-1618160702438-9b02ab6515c9",
-    price: "R330.00"
+    price: "R65.00",
+    packPrice: "Pack of 3 for R150.00"
   },
   {
-    title: "Natural Sunscreen",
-    description: "Zinc and titanium oxide protection for sensitive skin.",
+    title: "Lang'Elihle Natural Sunscreen",
+    description: "50ml: R85.00 | 100ml: R150.00",
     image: "/photo-1618160702438-9b02ab6515c9",
-    price: "R330.00"
+    price: "From R85.00"
   }
 ];
 
@@ -38,14 +39,23 @@ const Products = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative max-w-2xl mx-auto mb-16"
+            className="relative max-w-3xl mx-auto mb-16"
           >
-            <div className="aspect-square rounded-full overflow-hidden bg-white shadow-xl mx-auto" style={{ width: '400px', height: '400px' }}>
+            <div className="rounded-lg overflow-hidden bg-white shadow-xl mx-auto p-4">
               <img
-                src="/lovable-uploads/308ed3f5-a118-4b36-8fd7-e15fc475b345.png"
+                src="/lovable-uploads/fc1915c0-2f58-41cf-9c92-314234d38ed0.png"
                 alt="Mother Nature Product Collection"
-                className="w-full h-full object-contain p-4"
+                className="w-full h-auto object-contain"
               />
+              <div className="bg-primary/10 p-4 mt-4 rounded-lg">
+                <p className="text-forest font-semibold text-lg">Special Pack Offer</p>
+                <p className="text-forest/80">
+                  1 x 100ml Eczema Relief Oil + 3 x Shower Gels + 50ml Sunscreen
+                </p>
+                <p className="text-accent font-bold mt-2">
+                  R380.00 (Save R50)
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -60,9 +70,12 @@ const Products = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col gap-2">
                   <span className="text-lg font-semibold text-forest">{product.price}</span>
-                  <Button className="bg-accent hover:bg-accent/90">
+                  {product.packPrice && (
+                    <span className="text-sm text-forest/70">{product.packPrice}</span>
+                  )}
+                  <Button className="bg-accent hover:bg-accent/90 mt-2">
                     Learn More
                   </Button>
                 </div>
