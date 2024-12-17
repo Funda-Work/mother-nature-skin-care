@@ -11,7 +11,7 @@ const blogPosts = [
   {
     title: "Gut Health & Skin Connection",
     description: "Understanding how your diet affects your skin's health.",
-    image: "/gut-health.jpg",
+    image: "/lovable-uploads/a977ddf6-e836-46ef-bcb7-8d4a94db4b43.png",
     date: "March 12, 2024"
   },
   {
