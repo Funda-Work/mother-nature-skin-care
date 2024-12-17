@@ -5,7 +5,7 @@ const blogPosts = [
   {
     title: "The Power of Aloe Ferox",
     description: "Discover the healing properties of this remarkable African plant.",
-    image: "/lovable-uploads/fc1915c0-2f58-41cf-9c92-314234d38ed0.png",
+    image: "/lovable-uploads/7fdd95dd-71a6-418d-91a5-30054ef9fb0d.png",
     date: "March 15, 2024"
   },
   {
