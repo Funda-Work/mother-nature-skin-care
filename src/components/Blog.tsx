@@ -17,7 +17,7 @@ const blogPosts = [
   {
     title: "Natural Skincare Science",
     description: "The research behind Mother Nature's formulations.",
-    image: "/skincare-science.jpg",
+    image: "/lovable-uploads/637bc6a0-1743-4bee-9c29-b186e766bf3a.png",
     date: "March 10, 2024"
   }
 ];
