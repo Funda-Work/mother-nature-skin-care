@@ -18,9 +18,13 @@ const Navbar = () => {
     <nav className="bg-white/80 backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-serif font-bold text-forest">
-              Mother Nature
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center gap-2">
+              <img 
+                src="/lovable-uploads/a4995413-dd51-4148-ace9-6a431c7a4112.png" 
+                alt="Mother Nature Logo" 
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
           

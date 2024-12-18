@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -44,20 +45,22 @@ const Services = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
             >
-              <Card className="bg-white hover:shadow-lg transition-shadow duration-300 h-full">
-                <CardHeader>
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <CardTitle className="text-dark">{service.title}</CardTitle>
-                  <CardDescription className="text-dark/70">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Button variant="outline" className="w-full">
-                    Learn More
-                  </Button>
-                </CardContent>
-              </Card>
+              <Link to="/contact">
+                <Card className="bg-white hover:shadow-lg transition-shadow duration-300 h-full cursor-pointer">
+                  <CardHeader>
+                    <div className="text-4xl mb-4">{service.icon}</div>
+                    <CardTitle className="text-dark">{service.title}</CardTitle>
+                    <CardDescription className="text-dark/70">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <Button variant="outline" className="w-full">
+                      Learn More
+                    </Button>
+                  </CardContent>
+                </Card>
+              </Link>
             </motion.div>
           ))}
         </div>
