@@ -57,8 +57,7 @@ const Testimonials = () => {
 
         <div className="mt-12 text-center text-forest/80">
           <p>Contact us:</p>
-          <p>Email: <span className="[direction:rtl] unicode-bidi:bidi-override">az.acirfa.erutanrehtom@ssenlew</span></p>
-          <p>Phone: <span className="[direction:rtl] unicode-bidi:bidi-override">4295305180</span></p>
+          <p>Email: <span className="[direction:rtl] unicode-bidi:bidi-override">acirfa.erutanrehtom@ofni</span></p>
         </div>
       </div>
     </section>
